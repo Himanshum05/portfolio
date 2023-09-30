@@ -1,0 +1,218 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px   ;
+    background:transparent;
+    display: flex;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+    color: #ededed;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}/*animation*/
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#1c1a46;
+    
+    animation: showRight 1s ease forwards;
+    animation-delay: .6s;
+}
+.navbar a
+{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight:500;
+    margin-left: 35px;
+    transition: 3s;
+    
+}
+.navbar a:hover,
+.navbar a.active
+{
+    color: #1c1a46;
+}
+.body{
+    position: relative;
+    background-color: #00abf0;
+}
+.home1{
+    width:100%;
+    height: 100vh;
+    background-color: #00abf0;
+    background-size: cover;
+    background-position: center;    
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-left: 10px;
+}
+.nextpage{
+    width: 700px;
+    margin: 80px ;
+    color: #1f1b6fee;
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 10px;
+    opacity: initial;
+
+    overflow: hidden;
+    text-align: center;
+}
+.headline{
+    text-align: center; 
+    background-color: transparent;
+    height: fit-content;
+    font-size: 30px;
+    justify-content: center; 
+    margin-top:15px ;
+    
+}
+.p1{
+    background-color:#1c1a46;
+    width:fit-content;
+    height:fit-content;
+    padding-top: 5px;
+    margin: 50px;
+    line-height: 16px;
+    font-size: 12px;
+    padding-left: 20px;
+    border-color: #ededed;
+    border-radius: 20px;
+    text-align: center;
+}
+.text{
+    margin-top: 12px;
+    color: #ededed;
+}
+.p1 a{
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: oblique;
+    color: #ededed;
+}
+.p2{
+    background-color: #1c1a46;
+    width:fit-content;
+    padding-top: 5px;
+    height: fit-content;
+    line-height: 16px;
+    margin: 50px;
+    font-size: 11px;
+    border-radius: 20px;
+    padding-left: 20px;
+    border-color: #ededed;
+    text-align: center;
+}
+.but1{
+    margin-top: 2px;
+    margin-bottom: 5px;
+    width: fit-content;
+    padding-bottom: 3px;
+}
+.but{
+    /**margin-top: 2px;
+    width: fit-content;
+    margin-bottom: 5px;
+    padding-bottom: 3px;**/
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 5px;
+    width: 15px;
+    height: 10px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 5px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.p2 a{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: oblique;
+    color: #ededed;
+
+}
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background:#1c1a46;
+    
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.1s;
+    z-index: -1;
+}
+.button::before{
+content: '';
+position:absolute;
+top: 0;
+left: 0;
+width: 100px;
+height: 100%;
+background:#00abf0;
+z-index: -1;
+transition: .5s;
+}
+.button a:hover{
+    color: #d6d7d8;
+
+}
+.button
+ a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: fit-content;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 7px;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 2;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.button a:hover::after{
+    width: 100%;
+    color: #ededed;
+}
