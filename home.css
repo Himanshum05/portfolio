@@ -62,7 +62,6 @@ body{
 
 .home {
     height: 100vh;
-    background-image: url(vector.png);
     background-color: #1B1447;
     background-size: cover;
     background-position: center;    
@@ -651,6 +650,10 @@ transition: .5s;
 }
 .Java{
     width: 55%;
+    animation: Java 3s;
+}
+.Python{
+    width: 85%;
     animation: Java 3s;
 }
 .C{
